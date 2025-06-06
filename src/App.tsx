@@ -22,13 +22,13 @@ import NotFound from './pages/NotFound';
 import Dashboard from './pages/user/Dashboard';
 import Profile from './pages/user/Profile';
 import MyClasses from './pages/user/MyClasses';
-// import MyMembership from './pages/user/MyMembership';
+import MyMembership from './pages/user/MyMembership';
 
 // Admin Pages
 import AdminDashboard from './pages/admin/AdminDashboard';
-// import ManageUsers from './pages/admin/ManageUsers';
+import ManageUsers from './pages/admin/ManageUsers';
 import ManageClasses from './pages/admin/ManageClasses';
-// import ManageMemberships from './pages/admin/ManageMemberships';
+import ManageMemberships from './pages/admin/ManageMemberships';
 
 function App() {
   return (
@@ -51,15 +51,15 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
             <Route path="classes" element={<MyClasses />} />
-            {/* <Route path="membership" element={<MyMembership />} /> */}
+            <Route path="membership" element={<MyMembership />} />
           </Route>
 
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminRoute><AdminLayout /></AdminRoute>}>
             <Route path="dashboard" element={<AdminDashboard />} />
-            {/* <Route path="users" element={<ManageUsers />} /> */}
+            <Route path="users" element={<ManageUsers />} />
             <Route path="classes" element={<ManageClasses />} />
-            {/* <Route path="memberships" element={<ManageMemberships />} /> */}
+            <Route path="memberships" element={<ManageMemberships />} />
           </Route>
 
           {/* 404 Route */}

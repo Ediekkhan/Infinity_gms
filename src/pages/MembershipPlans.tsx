@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Check, X, Calendar, CreditCard, Award, ChevronDown } from 'lucide-react';
+import { Check, X, Calendar, CreditCard, Award, ChevronDown, Users } from 'lucide-react';
 
 // Mock data for membership plans
 const membershipPlans = [
